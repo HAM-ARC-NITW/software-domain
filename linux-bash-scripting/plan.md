@@ -23,6 +23,7 @@
 
 - need some quick help? just ask `man`
 	- https://xkcd.com/1692/
+	- is `man` too complicated? use `tldr`: https://tldr.sh/
 
 - file system
 	- the interesting thing about linux is that everything is a file: external devices (`/dev`), processes (`/proc`) etc.
@@ -168,3 +169,26 @@
 		- how hp accidently deleted all the research files from kyoto university's cluster which were older than 10 days due to a wrongly timed update to their log cleanup bash script: https://youtu.be/Nkm8BuMc4sQ
 		- how steam's linux client ended up deleting all the files from the root folder if the steam folder has been moved/symlinked somewhere else: https://youtu.be/qzZLvw2AdvM
 		- how quirky-ness of how bash pipelines exit caused outage in cloudflare: https://youtu.be/kUtarOlOT3Y 
+
+- what's next?
+	- linux in general is just way too huge to cover within a single session, as it involves a broad range of concepts. treat the session as a _primer_ to the world of linux and bash scripting.
+	- as you tinker around more with linux and bash, you'll get more familiar with it.
+	- based on what you liked from the session, here are a couple of options which you can explore next:
+		- did you like the concept of linux and want to play around with it?
+			- play around with linux on a virtual machine to check whether all the apps which you daily drive are compatible with linux, or if there's a suitable workaround for your use case.
+			- initially, try it out on a virtual machine using [virtualbox](https://virtualbox.org), and if satisfied with the experience, go ahead with dual booting linux along with windows.
+			- start with a simple ubuntu / debian based distro initially. my recommendation would be linux mint, which is based on ubuntu and is quite minimal in terms of the software that gets packed along with it, as well as its graphical interface.
+			- if you're on macOS:
+				- on an intel-based mac, you can dual-boot via boot camp, or just use virtual machine like virtualbox. you'll have almost similar experience to windows.
+				- on an apple silicon (M1/M2/M3) mac, check out [asahi linux](https://asahilinux.org). it's still quite experimental, so i wouldn't recommend daily-driving it unless you know what you're doing.
+				- do you want to explore more about command-line utilies?
+			- apart from command-line tools which we've covered in the sesh, there are a lot more. some of the interesting ones which you can explore further:
+				- `curl`: a tool for fetching stuff from the web. it supports a huge range of protocols apart from HTTP/HTTPS. list of all the protocols which it supports are listed over here: https://curl.se/docs/manpage.html
+				- `tmux`: for terminal sessions which you keep running in background and attach back later in future aka persistent terminal sessions: https://github.com/tmux/tmux/wiki
+				- `jq`: for processing json data: https://jqlang.org
+				- `awk`: for parsing/processing structured text (like CSVs or log files) by columns/fields — e.g. `awk '{print $2}' file` prints the second whitespace-separated column of every line. more powerful than sed/grep for anything involving columns: https://www.gnu.org/software/gawk/manual/gawk.html
+			- the linux documentation project (tldp) also has a really nice guide for bash scripting: https://tldp.org/LDP/abs/html
+			- you can also go through the following two lectures from "missing semester" course:
+				- https://missing.csail.mit.edu/2026/course-shell
+				- https://missing.csail.mit.edu/2026/command-line-environment
+		- anything which is not covered over here? drop a message in the group and we'll try to help you out 
