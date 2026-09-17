@@ -169,6 +169,7 @@
 		- how hp accidently deleted all the research files from kyoto university's cluster which were older than 10 days due to a wrongly timed update to their log cleanup bash script: https://youtu.be/Nkm8BuMc4sQ
 		- how steam's linux client ended up deleting all the files from the root folder if the steam folder has been moved/symlinked somewhere else: https://youtu.be/qzZLvw2AdvM
 		- how quirky-ness of how bash pipelines exit caused outage in cloudflare: https://youtu.be/kUtarOlOT3Y 
+	- bash is not very well known for its error messages and along with its random quirks and cryptic error messages, it might be a bit difficult while getting started. it is recommened to use a linter like [`shellcheck`](https://github.com/koalaman/shellcheck) to avoid use issues. it helps in pointing out some of the common mistakes and provide with better error messages
 
 - what's next?
 	- linux in general is just way too huge to cover within a single session, as it involves a broad range of concepts. treat the session as a _primer_ to the world of linux and bash scripting.
@@ -183,13 +184,13 @@
 				- on an apple silicon (M1/M2/M3) mac, check out [asahi linux](https://asahilinux.org). it's still quite experimental, so i wouldn't recommend daily-driving it unless you know what you're doing.
 		- do you want to explore more about command-line utilies?
 			- apart from command-line tools which we've covered in the sesh, there are a lot more. some of the interesting ones which you can explore further:
-				- `curl`: a tool for fetching stuff from the web. it supports a huge range of protocols apart from HTTP/HTTPS. list of all the protocols which it supports are listed over here: https://curl.se/docs/manpage.html
-				- `tmux`: for terminal sessions which you keep running in background and attach back later in future aka persistent terminal sessions: https://github.com/tmux/tmux/wiki
-				- `jq`: for processing json data: https://jqlang.org
-				- `awk`: for processing structure text files based on columns / fields: https://www.gnu.org/software/gawk/manual/gawk.html
-				- `rigrep`: a fast grep-like search tool optimized for tasks related to searching in source code files: https://github.com/BurntSushi/ripgrep
-				- `zoxide`: a "smarter" version of `cd`: https://github.com/ajeetdsouza/zoxide
-				- `fzf`: a file fuzzy finder: https://github.com/junegunn/fzf
+				- [`curl`](https://curl.se/docs/manpage.html): a tool for fetching stuff from the web. it supports a huge range of protocols apart from HTTP/HTTPS. list of all the protocols which it supports are listed over here
+				- [`tmux`](https://github.com/tmux/tmux/wiki): for terminal sessions which you keep running in background and attach back later in future aka persistent terminal sessions
+				- [`jq`](https://jqlang.org): for processing json data
+				- [`awk`](https://www.gnu.org/software/gawk/manual/gawk.html): for processing structure text files based on columns / fields
+				- [`rigrep`](https://github.com/BurntSushi/ripgrep): a fast grep-like search tool optimized for tasks related to searching in source code files
+				- [`zoxide`](https://github.com/ajeetdsouza/zoxide): a "smarter" version of `cd`
+				- [`fzf`](https://github.com/junegunn/fzf): a file fuzzy finder
 			- also, try exploring your distro's package manager to get familiar with how to install software tools via them
 			- the linux documentation project (tldp) also has a really nice guide for bash scripting: https://tldp.org/LDP/abs/html
 			- you can also go through the following two lectures from "missing semester" course:
