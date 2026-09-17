@@ -186,7 +186,11 @@
 				- `curl`: a tool for fetching stuff from the web. it supports a huge range of protocols apart from HTTP/HTTPS. list of all the protocols which it supports are listed over here: https://curl.se/docs/manpage.html
 				- `tmux`: for terminal sessions which you keep running in background and attach back later in future aka persistent terminal sessions: https://github.com/tmux/tmux/wiki
 				- `jq`: for processing json data: https://jqlang.org
-				- `awk`: for parsing/processing structured text (like CSVs or log files) by columns/fields — e.g. `awk '{print $2}' file` prints the second whitespace-separated column of every line. more powerful than sed/grep for anything involving columns: https://www.gnu.org/software/gawk/manual/gawk.html
+				- `awk`: for processing structure text files based on columns / fields: https://www.gnu.org/software/gawk/manual/gawk.html
+				- `rigrep`: a fast grep-like search tool optimized for tasks related to searching in source code files: https://github.com/BurntSushi/ripgrep
+				- `zoxide`: a "smarter" version of `cd`: https://github.com/ajeetdsouza/zoxide
+				- `fzf`: a file fuzzy finder: https://github.com/junegunn/fzf
+			- also, try exploring your distro's package manager to get familiar with how to install software tools via them
 			- the linux documentation project (tldp) also has a really nice guide for bash scripting: https://tldp.org/LDP/abs/html
 			- you can also go through the following two lectures from "missing semester" course:
 				- https://missing.csail.mit.edu/2026/course-shell
