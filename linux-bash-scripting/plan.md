@@ -47,8 +47,10 @@
 		- `-f`: ignore nonexistent files
 	- `cp`: copy file / directory
 	- `mv`: move files
-	- absolute paths
-	- relative paths
+	- absolute paths: refers to the complete path of the file and it is based of the root dir (`/`). the absolute path of a file / directory remains the same irrespective of from where it is referred from in the system
+	- relative paths: refers to the path from the pov of the current working dir. the relative path of a file / directory changes based on where you're currently present in the system. 
+		- `./`: points to the current working directory
+		- `../`: points to the immediate parent of the current working directory
 
 - working with text files
 	- `cat`: concatenate files and print their contents
