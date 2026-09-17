@@ -181,7 +181,7 @@
 			- if you're on macOS:
 				- on an intel-based mac, you can dual-boot via boot camp, or just use virtual machine like virtualbox. you'll have almost similar experience to windows.
 				- on an apple silicon (M1/M2/M3) mac, check out [asahi linux](https://asahilinux.org). it's still quite experimental, so i wouldn't recommend daily-driving it unless you know what you're doing.
-				- do you want to explore more about command-line utilies?
+		- do you want to explore more about command-line utilies?
 			- apart from command-line tools which we've covered in the sesh, there are a lot more. some of the interesting ones which you can explore further:
 				- `curl`: a tool for fetching stuff from the web. it supports a huge range of protocols apart from HTTP/HTTPS. list of all the protocols which it supports are listed over here: https://curl.se/docs/manpage.html
 				- `tmux`: for terminal sessions which you keep running in background and attach back later in future aka persistent terminal sessions: https://github.com/tmux/tmux/wiki
