@@ -134,7 +134,7 @@
 		- `$@`: all the arguments as space-separated words
 		- `$#`: number of arguments
 	- if/else
-		- ```bash
+		```bash
 		if [ condition ]; then
 
 		fi
@@ -146,7 +146,7 @@
 		- for files / directories:
 			- `-f`, `-d` (whether they exist)
 	- for loops
-		- ```bash
+		```bash
 		for variable in ...; do
 		
 		done
@@ -154,7 +154,7 @@
 		- create ranges using `{start..end}` syntax
 			- in bash, the `end` is also exclusive i.e. `[start, end]` is the range and not `[start, end)`
 	- functions
-		- ```bash
+		```bash
 		function_name() {
 			...
 		}
